@@ -1,0 +1,49 @@
+name: snakegame
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+  audioplayers: ^2.0.0
+  # pub global run rename --bundleId com.nirmal.snakegame --target android
+dev_dependencies:
+  rename: ^2.1.1
+  flutter_launcher_icons: "^0.11.0"
+  flutter_test:
+    sdk: flutter
+
+    
+  
+  flutter_lints: ^2.0.0
+
+flutter_icons: 
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  macos:
+    generate: true
+    image_path: "path/to/image.png"
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/
+  
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-Bold.ttf
+          weight: 700 
+  
